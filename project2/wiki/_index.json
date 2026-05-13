@@ -1,20 +1,94 @@
 {
+  "PlatformArchitecture": {
+    "filename": "PlatformArchitecture.md",
+    "word_count": 669,
+    "outgoing_links": [
+      "VoiceInterface",
+      "DialogueSystem",
+      "AffectiveComputing",
+      "ExperienceStorageRetrieval",
+      "ExperienceMatching",
+      "SafetyAndEscalation",
+      "VoiceInterface",
+      "DialogueSystem",
+      "AffectiveComputing",
+      "ExperienceStorageRetrieval",
+      "ExperienceMatching",
+      "SafetyAndEscalation"
+    ],
+    "incoming_links": [
+      "AffectiveComputing",
+      "SafetyAndEscalation",
+      "VoiceInterface"
+    ]
+  },
   "ExperienceMatching": {
     "filename": "ExperienceMatching.md",
-    "word_count": 371,
+    "word_count": 373,
     "outgoing_links": [
       "ExperienceStorageRetrieval"
     ],
     "incoming_links": [
-      "VoiceInterface",
+      "PlatformArchitecture",
       "DialogueSystem",
+      "VoiceInterface",
+      "ExperienceStorageRetrieval"
+    ]
+  },
+  "EmpathyDesign": {
+    "filename": "EmpathyDesign.md",
+    "word_count": 946,
+    "outgoing_links": [
+      "TextToSpeechSynthesis",
+      "AffectiveComputing",
+      "DialogueSystem",
+      "VoiceInterface",
+      "TextToSpeechSynthesis",
       "ExperienceStorageRetrieval",
-      "PlatformArchitecture"
+      "AffectiveComputing",
+      "TextToSpeechSynthesis",
+      "MentorMenteeSystem",
+      "ExperienceStorageRetrieval"
+    ],
+    "incoming_links": [
+      "DialogueSystem",
+      "AffectiveComputing",
+      "SafetyAndEscalation",
+      "VoiceInterface",
+      "ExperienceStorageRetrieval"
+    ]
+  },
+  "DialogueSystem": {
+    "filename": "DialogueSystem.md",
+    "word_count": 703,
+    "outgoing_links": [
+      "ExperienceStorageRetrieval",
+      "MentorMenteeSystem",
+      "EmpathyDesign",
+      "VoiceInterface",
+      "AffectiveComputing",
+      "AffectiveComputing",
+      "MentorMenteeSystem",
+      "ExperienceStorageRetrieval",
+      "EmpathyDesign",
+      "VoiceInterface",
+      "EmpathyDesign",
+      "ExperienceStorageRetrieval",
+      "ExperienceMatching",
+      "AffectiveComputing"
+    ],
+    "incoming_links": [
+      "PlatformArchitecture",
+      "EmpathyDesign",
+      "AffectiveComputing",
+      "SafetyAndEscalation",
+      "VoiceInterface",
+      "KnowledgeBaseDesign"
     ]
   },
   "AffectiveComputing": {
     "filename": "AffectiveComputing.md",
-    "word_count": 717,
+    "word_count": 719,
     "outgoing_links": [
       "SafetyAndEscalation",
       "MentorMenteeSystem",
@@ -34,17 +108,33 @@
       "MentorMenteeSystem"
     ],
     "incoming_links": [
+      "PlatformArchitecture",
+      "EmpathyDesign",
+      "DialogueSystem",
+      "SafetyAndEscalation",
       "VoiceInterface",
+      "KnowledgeBaseDesign"
+    ]
+  },
+  "SafetyAndEscalation": {
+    "filename": "SafetyAndEscalation.md",
+    "word_count": 678,
+    "outgoing_links": [
+      "AffectiveComputing",
+      "PlatformArchitecture",
       "DialogueSystem",
       "EmpathyDesign",
+      "MentorMenteeSystem",
+      "ExperienceStorageRetrieval"
+    ],
+    "incoming_links": [
       "PlatformArchitecture",
-      "SafetyAndEscalation",
-      "KnowledgeBaseDesign"
+      "AffectiveComputing"
     ]
   },
   "VoiceInterface": {
     "filename": "VoiceInterface.md",
-    "word_count": 816,
+    "word_count": 818,
     "outgoing_links": [
       "AffectiveComputing",
       "PlatformArchitecture",
@@ -63,139 +153,16 @@
       "EmpathyDesign"
     ],
     "incoming_links": [
-      "AffectiveComputing",
-      "DialogueSystem",
-      "EmpathyDesign",
-      "ExperienceStorageRetrieval",
-      "PlatformArchitecture"
-    ]
-  },
-  "DialogueSystem": {
-    "filename": "DialogueSystem.md",
-    "word_count": 701,
-    "outgoing_links": [
-      "ExperienceStorageRetrieval",
-      "MentorMenteeSystem",
-      "EmpathyDesign",
-      "VoiceInterface",
-      "AffectiveComputing",
-      "AffectiveComputing",
-      "MentorMenteeSystem",
-      "ExperienceStorageRetrieval",
-      "EmpathyDesign",
-      "VoiceInterface",
-      "EmpathyDesign",
-      "ExperienceStorageRetrieval",
-      "ExperienceMatching",
-      "AffectiveComputing"
-    ],
-    "incoming_links": [
-      "AffectiveComputing",
-      "VoiceInterface",
-      "EmpathyDesign",
       "PlatformArchitecture",
-      "SafetyAndEscalation",
-      "KnowledgeBaseDesign"
-    ]
-  },
-  "EmpathyDesign": {
-    "filename": "EmpathyDesign.md",
-    "word_count": 944,
-    "outgoing_links": [
-      "TextToSpeechSynthesis",
-      "AffectiveComputing",
+      "EmpathyDesign",
       "DialogueSystem",
-      "VoiceInterface",
-      "TextToSpeechSynthesis",
-      "ExperienceStorageRetrieval",
       "AffectiveComputing",
-      "TextToSpeechSynthesis",
-      "MentorMenteeSystem",
       "ExperienceStorageRetrieval"
-    ],
-    "incoming_links": [
-      "AffectiveComputing",
-      "VoiceInterface",
-      "DialogueSystem",
-      "ExperienceStorageRetrieval",
-      "SafetyAndEscalation"
-    ]
-  },
-  "MentorMenteeSystem": {
-    "filename": "MentorMenteeSystem.md",
-    "word_count": 237,
-    "outgoing_links": [],
-    "incoming_links": [
-      "AffectiveComputing",
-      "DialogueSystem",
-      "EmpathyDesign",
-      "SafetyAndEscalation",
-      "KnowledgeBaseDesign"
-    ]
-  },
-  "ExperienceStorageRetrieval": {
-    "filename": "ExperienceStorageRetrieval.md",
-    "word_count": 407,
-    "outgoing_links": [
-      "Dual Representation",
-      "EmpathyDesign",
-      "VoiceInterface",
-      "LLM Extraction",
-      "pgvector",
-      "ExperienceMatching"
-    ],
-    "incoming_links": [
-      "ExperienceMatching",
-      "AffectiveComputing",
-      "DialogueSystem",
-      "EmpathyDesign",
-      "PlatformArchitecture",
-      "SafetyAndEscalation",
-      "KnowledgeBaseDesign"
-    ]
-  },
-  "PlatformArchitecture": {
-    "filename": "PlatformArchitecture.md",
-    "word_count": 667,
-    "outgoing_links": [
-      "VoiceInterface",
-      "DialogueSystem",
-      "AffectiveComputing",
-      "ExperienceStorageRetrieval",
-      "ExperienceMatching",
-      "SafetyAndEscalation",
-      "VoiceInterface",
-      "DialogueSystem",
-      "AffectiveComputing",
-      "ExperienceStorageRetrieval",
-      "ExperienceMatching",
-      "SafetyAndEscalation"
-    ],
-    "incoming_links": [
-      "AffectiveComputing",
-      "VoiceInterface",
-      "SafetyAndEscalation"
-    ]
-  },
-  "SafetyAndEscalation": {
-    "filename": "SafetyAndEscalation.md",
-    "word_count": 676,
-    "outgoing_links": [
-      "AffectiveComputing",
-      "PlatformArchitecture",
-      "DialogueSystem",
-      "EmpathyDesign",
-      "MentorMenteeSystem",
-      "ExperienceStorageRetrieval"
-    ],
-    "incoming_links": [
-      "AffectiveComputing",
-      "PlatformArchitecture"
     ]
   },
   "KnowledgeBaseDesign": {
     "filename": "KnowledgeBaseDesign.md",
-    "word_count": 529,
+    "word_count": 531,
     "outgoing_links": [
       "KnowledgeBaseDesign",
       "DialogueSystem",
@@ -209,5 +176,38 @@
       "DialogueSystem"
     ],
     "incoming_links": []
+  },
+  "MentorMenteeSystem": {
+    "filename": "MentorMenteeSystem.md",
+    "word_count": 239,
+    "outgoing_links": [],
+    "incoming_links": [
+      "EmpathyDesign",
+      "DialogueSystem",
+      "AffectiveComputing",
+      "SafetyAndEscalation",
+      "KnowledgeBaseDesign"
+    ]
+  },
+  "ExperienceStorageRetrieval": {
+    "filename": "ExperienceStorageRetrieval.md",
+    "word_count": 409,
+    "outgoing_links": [
+      "Dual Representation",
+      "EmpathyDesign",
+      "VoiceInterface",
+      "LLM Extraction",
+      "pgvector",
+      "ExperienceMatching"
+    ],
+    "incoming_links": [
+      "PlatformArchitecture",
+      "ExperienceMatching",
+      "EmpathyDesign",
+      "DialogueSystem",
+      "AffectiveComputing",
+      "SafetyAndEscalation",
+      "KnowledgeBaseDesign"
+    ]
   }
 }
