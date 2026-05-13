@@ -35,7 +35,7 @@ WIKI_DIR = os.path.join(os.path.dirname(__file__), "wiki")
 INDEX_PATH = os.path.join(WIKI_DIR, "_index.json")
 EMBEDDINGS_PATH = os.path.join(WIKI_DIR, "_embeddings.pkl")
 EMBED_MODEL = "all-MiniLM-L6-v2"
-QA_MODEL = "gemini-2.0-flash"
+QA_MODEL = "gemini-2.5-flash"
 
 
 # ── Embedding utilities ────────────────────────────────────────────────────

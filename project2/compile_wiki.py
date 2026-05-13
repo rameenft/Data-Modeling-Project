@@ -39,7 +39,7 @@ RAW_DIR = os.path.join(os.path.dirname(__file__), "raw")
 WIKI_DIR = os.path.join(os.path.dirname(__file__), "wiki")
 INDEX_PATH = os.path.join(WIKI_DIR, "_index.json")
 
-COMPILE_MODEL = "gemini-2.0-flash"
+COMPILE_MODEL = "gemini-2.5-flash"
 
 TOPIC_OVERVIEW = (
     "AI-powered social platform for shared human experiences: "
