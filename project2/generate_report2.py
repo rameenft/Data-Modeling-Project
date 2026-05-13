@@ -174,16 +174,16 @@ def build_pdf():
     # Real stats from build_index.py output
     wiki_data = [
         ["Article", "Words", "Out Links", "In Links"],
-        ["AffectiveComputing",        "719",  "16", "6"],
-        ["DialogueSystem",            "703",  "14", "6"],
-        ["EmpathyDesign",             "946",  "10", "5"],
-        ["ExperienceMatching",        "373",  "1",  "4"],
-        ["ExperienceStorageRetrieval","409",  "6",  "7"],
+        ["AffectiveComputing",        "719",  "16", "8"],
+        ["DialogueSystem",            "703",  "14", "7"],
+        ["EmpathyDesign",             "946",  "10", "7"],
+        ["ExperienceMatching",        "895",  "12", "5"],
+        ["ExperienceStorageRetrieval","409",  "6",  "8"],
         ["KnowledgeBaseDesign",       "531",  "10", "0"],
-        ["MentorMenteeSystem",        "239",  "0",  "5"],
-        ["PlatformArchitecture",      "669",  "12", "3"],
+        ["MentorMenteeSystem",        "916",  "12", "6"],
+        ["PlatformArchitecture",      "669",  "12", "4"],
         ["SafetyAndEscalation",       "678",  "6",  "2"],
-        ["VoiceInterface",            "818",  "15", "5"],
+        ["VoiceInterface",            "818",  "15", "6"],
     ]
     wiki_table = Table(wiki_data, colWidths=[2.4*inch, 0.8*inch, 0.9*inch, 0.9*inch])
     wiki_table.setStyle(TableStyle([
